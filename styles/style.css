@@ -68,8 +68,6 @@
 }
 /* Nav Style end */
 
-
-
 /* Banner Style start */
 .banner-container{
     display: flex;
@@ -100,6 +98,83 @@
     width: 100%;
 }
 /* Banner Style end */
+
+/* Standard Curriculum Section Style start  */
+.standard-card-container{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: 10px -35px;
+}
+.standard-curri-title{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 3.75rem;
+    margin-bottom: 5rem;
+}
+.standard-card-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-bottom: 5rem;
+}
+.standard-card{
+    text-align: center;
+    border: 1px solid #DEF5FF;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 30%),rgb(255, 255, 255);
+}
+.sc-image-01{
+    margin-top: 3.5rem;
+}
+.standard-card-01-title{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.standard-card-01-description{
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #808080;
+}
+.standard-card-btn{
+    font-size: 1rem;
+    color: #64C8FF;
+    margin-top: 2rem;
+    margin-bottom: 3.25rem;
+    font-weight: 700;
+}
+.standard-card-02{
+    border: 1px solid #FFF4DC;
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 30%),rgb(255, 255, 255);
+}
+.standard-card-03{
+    border: 1px solid #F2E8FF;
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.standard-card-btn-02{
+    color: #F0AA00;
+    margin-top: 2.5rem;
+}
+.standard-card-btn-03{
+    color: #8700FF;
+    margin-top: 2.5rem;
+}
+.icon-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 3.75rem;
+}
+.icon-01{
+    background-color: #FEA301;
+    font-size: 1.5rem;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 50%;
+}
+/* Standard Curriculum Section Style end  */
 
 /* Navbar Responsive start */
 @media screen and (max-width: 425px) {
@@ -144,7 +219,7 @@
     }
     .banner-title{
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         line-height: 3rem;
     }
     .banner-title br{
@@ -159,11 +234,34 @@
     }
     .banner-button{
         text-align: center;
+        margin-bottom: 8px;
     }
     .banner-btn{
         font-size: 16px;
         padding: 10px 24px;
         border-radius: 8px;
+        
     }
 }
 /* Banner Responsive end */
+
+/* Standard Curriculum Section Responsive start */
+@media screen and (max-width: 425px) {
+    .standard-card-box{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+    .standard-curri-title{
+        font-size: 1.7rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+    }
+    .standard-card-container{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .icon-item{
+        display: none;
+    }
+}
+/* Standard Curriculum Section Responsive end */
