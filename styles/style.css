@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,12 @@
     max-width: 70%;
     margin: 0 auto;
 }
+.primary-bg{
+    background-image: url(../images/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 50%);
+}
+.raleway-fonts{
+    font-family: "Raleway", serif;
+}
 /* Nav Style start */
 .nav-content{
     display: flex;
@@ -19,7 +27,7 @@
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
-.nav-left-item{
+.nav-left-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,17 +41,17 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav-middle-item ul{
+.nav-middle-content ul{
     list-style-type: none;
     text-decoration: none;
     gap: 2rem;
 }
-.nav-middle-item li a{
+.nav-middle-content li a{
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 500;
 }
-.nav-middle-item .text-color1{
+.nav-middle-content .text-color1{
     font-weight: 700;
 }
 .text-color1{
@@ -100,11 +108,6 @@
 /* Banner Style end */
 
 /* Standard Curriculum Section Style start  */
-.standard-card-container{
-    background-image: url(../images/bg.png);
-    background-repeat: no-repeat;
-    background-position: 10px -35px;
-}
 .standard-curri-title{
     font-size: 2.8rem;
     text-align: center;
@@ -176,10 +179,13 @@
 }
 /* Standard Curriculum Section Style end  */
 
+/* Our Stories Section Style start */
+/* Our Stories Section Style end */
+
 /* Navbar Responsive start */
 @media screen and (max-width: 425px) {
     .nav-left-title,
-    .nav-middle-item,
+    .nav-middle-content,
     .nav-btn
     {
         display: none;
@@ -232,36 +238,66 @@
     .banner-description br{
         display: none;
     }
-    .banner-button{
+    .banner-primary-button{
         text-align: center;
         margin-bottom: 8px;
     }
     .banner-btn{
         font-size: 16px;
         padding: 10px 24px;
-        border-radius: 8px;
-        
+        border-radius: 8px;   
     }
 }
 /* Banner Responsive end */
 
 /* Standard Curriculum Section Responsive start */
 @media screen and (max-width: 425px) {
+    .standard-card-container{
+        max-width: 100%;
+        padding: 0rem 1rem;
+    }
     .standard-card-box{
         grid-template-columns: repeat(1, 1fr);
         gap: 12px;
+        margin-bottom: 1.25rem;
     }
     .standard-curri-title{
         font-size: 1.7rem;
         margin-top: 2.5rem;
         margin-bottom: 1.25rem;
     }
-    .standard-card-container{
-        max-width: 100%;
-        padding: 0 1rem;
-    }
     .icon-item{
         display: none;
     }
 }
 /* Standard Curriculum Section Responsive end */
+
+/* Our Stories Section Responsive start */
+@media screen and (max-width: 425px){
+    .our-stories-left-content{
+        display: none;
+    }
+    .our-stories-title{
+        margin-top:2.5rem;
+        margin-bottom: 1.25rem;
+        
+    }
+    .our-stories-btn{
+        font-size: 11px;
+        padding: 8px 12px;
+        position: relative;
+        right: -1.3rem;
+    }
+    .our-stories-container{
+        margin: 0px;
+    }
+    .our-stories-img2{
+        gap: 11px;
+        position: absolute;
+        padding: 0 1rem;
+    }
+    .our-stories-img{
+        padding: 0rem;
+    }
+}
+/* Our Stories Section Responsive end */
