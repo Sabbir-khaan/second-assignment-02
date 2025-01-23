@@ -163,14 +163,14 @@
     color: #8700FF;
     margin-top: 2.5rem;
 }
-.icon-item{
+.icon-container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 3.75rem;
 }
-.icon-01{
+.icon{
     background-color: #FEA301;
     font-size: 1.5rem;
     color: white;
@@ -180,8 +180,123 @@
 /* Standard Curriculum Section Style end  */
 
 /* Our Stories Section Style start */
+.our-stories-heading{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.our-stories-title{
+    font-size: 2.8rem;
+    margin-bottom: 5rem;
+}
+.our-stories-card-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 5rem;
+}
+.our-stories-left-content{
+    background-color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+.our-stories-right-content{
+    background-color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;
+}
+.our-stories-card-box-01 img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.our-stories-card-box-02 img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.our-stories-card-box-02{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+.our-stories-btn{
+    font-size: 1rem;
+    background-color: #3CD8E8;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    padding: 0.8rem 1.25rem;
+    position: absolute;
+    top: 390px;
+    left: 50px;
+}
+.our-stories-title-02{
+    font-size: 1.5rem;
+    text-align: start;
+    line-height: 2.3rem;
+    font-weight: 700;
+    padding: 0 3.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+.our-stories-description{
+    font-size: 1rem;
+    text-align: start;
+    line-height: 1.75rem;
+    color: #666666;
+    padding: 0 3.5rem;
+    margin-top: 2rem;
+}
+.common-button{
+    font-size: 1rem;
+    background-color: #95B226;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    padding: 0.6rem 1.25rem;
+    position: absolute;
+    top: 11rem;
+    left: 2.75rem;
+}
+.common-button-01{
+    background-color: #5D58F0;
+}
+.common-button-02{
+    background-color: #01ACFD;
+}
+.common-button-03{
+    background-color: #FEA301;
+}
+.our-stories-description-02{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    padding: 1.25rem 2.3rem 1.75rem 1.5rem;
+}
+.our-stories-btn-02{
+    font-size: 1.25rem;
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    padding: 0.6rem 3.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    margin-bottom: 3.75rem;
+}
+.btn-container{
+    text-align: center;
+}
+
 /* Our Stories Section Style end */
 
+/* Kids Education Section Style start */
+
+/* Kids Education Section Style end */
 /* Navbar Responsive start */
 @media screen and (max-width: 425px) {
     .nav-left-title,
@@ -266,7 +381,7 @@
         margin-top: 2.5rem;
         margin-bottom: 1.25rem;
     }
-    .icon-item{
+    .icon-container{
         display: none;
     }
 }
